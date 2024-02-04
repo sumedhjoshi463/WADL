@@ -1,0 +1,97 @@
+.main-body{
+    height: 80vh;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 5% auto;
+}
+
+a {
+    text-decoration: none !important;
+    color: #000;
+  }
+
+a:hover{
+    color: rgb(50, 77, 77);
+}
+
+
+.navbar-content{
+    background-color: white; 
+    height: 6.3vh;
+}
+
+
+.body-content{
+    display: grid;
+    grid-template-columns: 18% auto;
+    height: 100vh;
+    border-bottom: solid black;
+}
+
+.sidebar{
+    background-color: rgb(74, 150, 212);
+    border-right: solid black;
+}
+
+.sidebar-title{
+    font-size: x-large;
+    margin-left: 1rem;
+}
+
+.sidebar-content{
+    margin-top: 4rem;
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.list{
+    list-style-type: none;
+
+    
+}
+
+.list-items{
+    width: fit-content;
+    margin-bottom: 2rem;
+    font-size: larger;
+    font-style: bold;
+    border-bottom: 2px solid white;
+    text-decoration: none;
+}
+
+.login-btn{
+    margin-right: 2rem;
+    padding: 0.5rem,0.5rem, 0.5rem, 0.5rem;
+}
+
+.page-content{
+    display: grid;
+    grid-template-rows:  45% 5% auto;
+}
+
+.card-content{
+    display: flex;
+    justify-content: space-around;
+    margin-top:2rem ;
+    
+}
+
+.page-title{
+    margin: 2rem 2rem 2rem 2rem;
+}
+
+.card{
+    height: 20vh;
+    
+}
+
+.card-img-top{
+    height: 148px;
+}
+
+.stats{
+    margin-top: 2%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-around;
+}

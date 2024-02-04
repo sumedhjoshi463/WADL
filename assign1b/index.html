@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Registration</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <h2>User Registration Form</h2>
+      <form id="registrationForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <button type="button" onclick="submitForm()">Submit</button>
+      </form>
+    </div>
+
+    <div class="data-container">
+      <h2>User Data List</h2>
+      <table id="userDataTable">
+        <thead>
+          <tr>
+            <th>Username</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody id="userDataBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
