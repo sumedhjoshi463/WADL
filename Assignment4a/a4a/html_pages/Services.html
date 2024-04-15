@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>My first jQuery Mobile code</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css">
+    <script src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        div.box {
+            /* width: 30em;
+              height: 3em;
+              background-color: #108040; */
+            display: list-item;
+        }
+
+
+        div.box.tap {
+            /* background-color: #bcc9cf; */
+            /* display: none; */
+            display: none;
+        }
+    </style>
+
+    <script>
+        $(function () {
+            $("div.box").bind("tap", tapHandler);
+
+            function tapHandler(event) {
+                $(event.target).addClass("tap");
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <div data-role="page" data-theme="a">
+        <div data-role="header">
+            <h1>Services</h1>
+        </div>
+        <div data-role="content">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="./About.html">About</a></li>
+                    <li><a href="./Contact.html">Contact Us</a></li>
+                    <li><a href="./Services.html">Services</a></li>
+                </ul>
+            </div>
+            <p>This is Services page</p>
+
+            <h3>Tap on services to see the description</h3>
+           
+                <div data-role="collapsible">
+                    <h2>Analytics</h2>
+                    <p>we provide data Analytics</p>
+                </div>
+                <div data-role="collapsible">
+                    <h2>support</h2>
+                    <p>Contact for Customer support </p>
+                </div>
+                <div data-role="collapsible">
+                    <h2>Marketing</h2>
+                    <p>We provide marketing strategies</p>
+                </div>
+            
+            <a href="../index.html">Go to home page</a>
+
+
+        </div>
+        <div data-role="footer">
+            <h4>&copy; 2012 Smashing Magazine</h4>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,5 @@
+_id,username,email,city,password,mobileNumber,__v
+65e571e3a748304b3c77fe30,chaitanya,abcd@gmail.com,pune,1234,9098765432,0
+65e5768442546b1e24cc4320,pranav,pranav@gmail.com,pune,12345,9098765431,0
+65e578e21e0b829f6648a568,yojan,yojan@gmail.com,nagpur,123456,9098765430,0
+65e579251e0b829f6648a571,nainish,shark@gmail.com,palghar(shark Village),1234567,9098765437,0
