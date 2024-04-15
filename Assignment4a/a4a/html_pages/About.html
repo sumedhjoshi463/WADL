@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <meta charset="utf-8">
+      <title>My first jQuery Mobile code</title>
+      <link rel="stylesheet" href="https://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css">
+      <script src="https://code.jquery.com/jquery-1.8.2.min.js"></script>
+      <script src="https://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <script>
+            $(function () {
+                  // Bind the swipeHandler callback function to the swipe event on div.box
+                  $("div.box").on("swipe", swipeHandler);
+
+                  // Callback function references the event target and adds the 'swipe' class to it
+                  function swipeHandler(event) {
+                        $(event.target).addClass("swipe");
+                  }
+            });
+
+            $(function () {
+                  $("div.box").bind("tap", tapHandler);
+
+                  function tapHandler(event) {
+                        $(event.target).addClass("tap");
+                  }
+            });
+      </script>
+
+      <style>
+            div.box {
+                  width: 30em;
+                  height: 3em;
+                  background-color: #108040;
+            }
+
+            div.box.swipe {
+                  background-color: #7ACEF4;
+            }
+
+            div.box.tap {
+                  /* background-color: #bcc9cf; */
+                  /* display: none; */
+                  width: 50em;
+                  height: 5em;
+            }
+      </style>
+</head>
+
+<body>
+      <div data-role="page" data-theme="a">
+            <div data-role="header">
+                  <h1>About Us</h1>
+            </div>
+            <div data-role="content">
+                  <div data-role="navbar">
+                        <ul>
+                           <li><a href="./About.html">About</a></li>
+                           <li><a href="./Contact.html">Contact Us</a></li>
+                           <li><a href="./Services.html">Services</a></li>
+                        </ul>
+                     </div>
+                  <p>This is About page</p>
+
+                  <div data-role="collapsible">
+                        <h2>Heading</h2>
+                        <p>Content for the collapsible area</p>
+                  </div>
+
+
+                  <h3>Swipe the green rectangle to change its color:</h3>
+                  <div class="box"></div>
+
+
+                  <a href="../index.html">Go to home page</a>
+            </div>
+            <div data-role="footer">
+                  <h4>&copy; 2012 Smashing Magazine</h4>
+            </div>
+      </div>
+</body>
+
+</html>
